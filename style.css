@@ -1,0 +1,538 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   background-color: black;
+   width: 100%;
+   height: 100%;
+}
+.maincontainer{
+    width: 100%;
+    height: 80px;
+    display: flex;  
+    background-color: #1685c9;
+    justify-content: space-between; 
+    align-items: center;    
+}  
+.items {
+    flex-basis: 300px;
+    height: 60px;
+    color: white;
+    flex-shrink: 1;
+}
+#logo{
+    display: flex;
+    align-items: center;
+    
+}
+.item1{
+    flex-basis: 50px;
+    height: 50px;
+    background-color: blueviolet;
+    background-image: url(img/price.jpg);
+    background-size: cover;
+    border-radius: 32px;
+    flex-shrink: 1;
+}
+.item2{
+  font-size: x-large;
+  padding-left: 10px;
+  flex-shrink: 1;
+}
+
+.search{
+  width: 400px;
+  height: 60px;
+  margin: 0px;
+  padding: 0px;
+}
+.searchitem input{
+    width: 350px;
+    height: 50px;
+    font-size: large;
+    margin: 5px;
+    padding-right: 40px;
+    flex-shrink: 1;
+    padding-left: 5px;
+    background-image: url(img/logo.webp);
+    background-size: 49px;
+    background-repeat: no-repeat;
+    flex-shrink: 1;
+    background-position: right;
+    border: 3px solid black;
+    box-shadow: 2px 2px 50px white;
+    border-radius: 15px;
+    flex-shrink: 1;
+}
+ .searchitem input:hover{
+   color: white;
+   font-weight: 600px;
+   background-color: black;
+   border: 5px solid white;
+   letter-spacing: 1px;
+} 
+.items{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 30px;
+}
+.class1{
+  width: 100px;
+  height: 40px;
+  padding: 6px 25px;
+   background: linear-gradient(90deg,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+   border: 3px solid black;
+   box-shadow: 2px 2px 20px black;
+  border-radius: 10px;
+  flex-shrink: 1
+
+}
+.class2{
+  width: 100px;
+  height: 40px;
+   background: linear-gradient(90deg,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+   border: 3px solid black;
+   box-shadow: 2px 2px 20px black;
+   padding: 6px 16px;
+  border-radius: 10px;
+  flex-shrink: 1; 
+}
+
+.class1:hover{
+    background: radial-gradient(circle,rgba(209, 8, 139, 1) 23%, rgba(148, 187, 233, 1) 100%);
+    border: 3px solid white;
+    color: white;
+    box-shadow: 2px 2px 20px black ;
+    transform: scale(1.5);
+    transition: 0.5s;
+}
+.class2:hover{
+    background: radial-gradient(circle,rgba(209, 8, 139, 1) 23%, rgba(148, 187, 233, 1) 100%);
+    border: 3px solid white;
+    color: white;
+    box-shadow: 2px 2px 20px black;
+     transform: scale(1.5); 
+    transition: 0.5s;
+ } 
+.imgbox{
+   width: 100%;
+   height: 100px;
+   position: absolute;
+   top: 100px;
+   display: flex;
+   font-size: small;
+   background-color: white;
+   gap: 10px;
+   justify-content: center;
+   align-items: center;
+}
+.imges {
+  width: 150px;
+  height: 80px; 
+  text-transform: capitalize;
+  padding: 10px 25px;
+   color: black;
+   align-items: center;
+   justify-content: center;
+   flex-shrink: 1;
+}
+.image1{
+  display: flex;
+  flex-direction: column;
+
+}
+.div1 {
+   width: 40px;
+   height: 40px;
+   background-image: url(/img/mobile.webp);
+   background-size: cover;
+}
+#image2{
+  display: flex;
+  flex-direction: column;
+}
+.ite1{
+  width: 40px;
+   height: 40px;
+   background-image: url(/img/wireless-earbuds.webp);
+   background-size: cover;
+}
+.image3{
+   display: flex;
+   flex-direction: column;
+
+}
+.abc{
+  width: 40px;
+  height: 40px;
+  background-image: url(/img/smart-watches.webp);
+  background-size: cover;
+}
+.image4{
+   display: flex;
+   flex-direction: column;
+}
+.acd{
+  width: 40px;
+  height: 40px;
+  background-image: url(/img/power-banks.webp);
+  background-size: cover;
+}
+.image5{
+   display: flex;
+   flex-direction: column;
+}
+.bca{
+  width: 50px;
+  height: 40px;
+  background-image: url(/img/bluetooth-speakers.webp);
+  background-size: cover;  
+}
+.image6{
+   display: flex;
+   flex-direction: column;
+}
+.abbc{
+  width: 40px;
+  height: 40px;
+  background-image: url(/img/tablets.webp);
+  background-size: cover;  
+ }
+.girl{
+  width: 100%;
+  height: 330;
+  background-color: white;
+  position: absolute;
+  top: 200px;
+
+} 
+.bigimage{
+   width: 100%;
+   height: 320px;
+   background-image: url(/img/big.jpg);
+   background-size: cover;
+   flex-shrink: 1;
+
+}
+.pink{
+  width: 100%;
+  height: 990px;
+  position: absolute;
+  top: 520px;
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fa57a3;
+
+}
+.itempink{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  flex-shrink: 1;
+  padding: 0px 20px;
+  align-items: center;
+  justify-content: space-between;
+} 
+.pinkitem{
+  width: 200px;
+  height: 30px;
+  color: white;
+  font-size: larger;
+  
+}
+#paragrafs{
+   width: 200px;
+   height: 30px;
+   color: black;
+   text-align: center;
+   flex-shrink: 1;
+}
+#button21{
+  width: 120px;
+  height: 40px;
+  border: 2px solid black;
+  text-align: center;
+  padding-top: 5px;
+  color: black;
+  border-radius: 5px;
+  background-color: white;
+  flex-shrink: 1;
+}
+#button21:hover{
+   color: white;
+   background-color: black;
+   border: 5px solid white;
+   transform: scale(1.5);
+   transition: 1s;
+}
+.itempi{
+   display: flex;
+   gap: 10px;
+   justify-content: space-evenly;
+   flex-wrap: wrap;
+   padding: 30px;
+}
+.cards{
+  background-color: white;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+  flex-shrink: 1;
+}
+#card1{
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 1;
+}
+#card1 img{
+   width: 120px;
+   padding-left: 50px;
+}
+#card2 img{
+   width: 120px;
+   padding-left: 50px;
+}
+#card3 img{
+  width: 120px;
+  padding-left: 50px;
+}
+#card4 img{
+  width: 120px;
+  padding-left: 50px;
+}
+#card5 img{
+  width: 120px;
+  padding-left: 50px;
+}
+#card6 img{
+  width: 120px;
+  padding-left: 50px;
+}
+#card7 img{
+  width: 120px;
+  padding-left: 50px;
+}
+#card8 img{
+  width: 120px;
+  padding-left: 50px;
+}
+#card9 img{
+  width: 120px;
+  padding-left: 50px;
+}
+#card10 img{
+   width: 120px;
+   padding-left: 50px;
+}
+#visab{
+  width: 100%;
+  height: 200;
+  background-color: black;
+  position: absolute;
+  top: 1400px;
+} 
+.visa{
+   width: 100%;
+   height: 280px;
+   background-image: url(/img/visa.jpg);
+   background-size: cover;
+   flex-shrink: 1;
+}
+.orange{
+   width: 100%;
+   height: 700px;
+   display: flex;
+   flex-direction: column;
+   position: absolute; 
+   top: 1750px;
+   background-color: darkorange;
+}
+.itempinks{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  flex-shrink: 1;
+  padding: 0px 20px;
+  align-items: center;
+  justify-content: space-between;
+} 
+.pinkitems{
+  width: 200px;
+  height: 30px;
+  color: white;
+  margin-top: 40px;
+  font-size: larger; 
+}
+#paragrafs{
+   width: 200px;
+   height: 30px;
+   text-align: center;
+   flex-shrink: 1;
+}
+#buttons21{
+  width: 120px;
+  height: 40px;
+  border: 2px solid black;
+  text-align: center;
+  padding-top: 5px;
+  color: black;
+  border-radius: 5px;
+  background-color: white;
+  flex-shrink: 1;
+}
+#buttons21:hover{
+   color: white;
+   background-color: black;
+   border: 5px solid white;
+   transform: scale(1.5);
+   transition: 1s;
+}
+.itempis{
+   display: flex;
+   gap: 10px;
+   justify-content: space-evenly;
+   flex-wrap: wrap;
+   padding: 30px;
+}
+.cardss{
+  background-color: white;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+  flex-shrink: 1;
+}
+#card1s{
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 1;
+}
+#card1s img{
+   width: 120px;
+   padding-left: 50px;
+}
+#card2s img{
+   width: 120px;
+   padding-left: 50px;
+}
+#card3s img{
+  width: 120px;
+  padding-left: 50px;
+}
+#card4s img{
+  width: 120px;
+  padding-left: 50px;
+}
+#card5s img{
+  width: 120px;
+  padding-left: 50px;
+}
+#card6s img{
+  width: 120px;
+  padding-left: 50px;
+}
+#card7s img{
+  width: 120px;
+  padding-left: 50px;
+}
+#card8s img{
+  width: 120px;
+  padding-left: 50px;
+}
+#card9s img{
+  width: 120px;
+  padding-left: 50px;
+}
+#card10s img{
+   width: 120px;
+   padding-left: 50px;
+}
+.girlss{
+  width: 100%;
+  height: 330;
+  background-color: white ;
+  position: absolute;
+  top: 2520px;
+} 
+.bigimagess{
+   width: 100%;
+   height: 330px;
+   background-image: url(/img/order.jpg);
+   background-size: cover;
+   flex-shrink: 1;
+}
+.footer{
+  width: 100%;
+  height: 440px;
+  position: absolute;
+  top: 2900px;
+  background-color: #1685c9;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.ites1{
+  color: white; 
+  flex-shrink: 1;
+  margin: 50px; 
+}
+#pays{
+  display: flex;
+  flex-shrink: 1;
+  flex-direction: column;
+
+}
+#pay1{
+  width: 390px;
+  height: 35px;
+  background-image: url(/img/payment_method.svg);
+  background-size: cover;
+  /* background-repeat: no-repeat; */
+  flex-shrink: 1;
+
+
+}
+#pay2{
+  width: 200px;
+  height: 60px;
+  flex-shrink: 1;
+  background-image: url(/img/google\ store.webp);
+  background-size: cover;
+  
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
