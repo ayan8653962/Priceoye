@@ -1,6 +1,6 @@
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   box-sizing: border-box;
 }
 body{
@@ -8,25 +8,32 @@ body{
    background-color: black;
    width: 100%;
    height: 100%;
+   color: white;
 }
 .maincontainer{
     width: 100%;
-    height: 80px;
-    display: flex;  
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
     background-color: #1685c9;
     justify-content: space-between; 
     align-items: center;    
 }  
 .items {
-    flex-basis: 300px;
-    height: 60px;
+    width: 100%;  
+    height: auto;
+    margin: 10px 0px;
     color: white;
+    align-items: center;
     flex-shrink: 1;
 }
 #logo{
     display: flex;
-    align-items: center;
-    
+    flex-shrink: 1;
+    max-width: 150px;
+    padding: 10px 0px;
+    justify-content: flex-start;
+    flex-wrap: 1;
 }
 .item1{
     flex-basis: 50px;
@@ -39,46 +46,46 @@ body{
 }
 .item2{
   font-size: x-large;
-  padding-left: 10px;
   flex-shrink: 1;
 }
-
 .search{
-  width: 400px;
-  height: 60px;
-  margin: 0px;
-  padding: 0px;
+  width: 100%;
+  max-width: 320px;
+  display: flex;
+  height: auto;
 }
-.searchitem input{
-    width: 350px;
-    height: 50px;
-    font-size: large;
-    margin: 5px;
-    padding-right: 40px;
+#searchitem input{
+    width: 100%;
+    height: auto;
+    max-width: 250px;
     flex-shrink: 1;
+    font-size: large;
+    margin: 10px;
+    padding: 10px;
+    padding-right: 40px;
     padding-left: 5px;
     background-image: url(img/logo.webp);
-    background-size: 49px;
+    background-size: 48px;
     background-repeat: no-repeat;
-    flex-shrink: 1;
     background-position: right;
     border: 3px solid black;
     box-shadow: 2px 2px 50px white;
     border-radius: 15px;
     flex-shrink: 1;
 }
- .searchitem input:hover{
+ #searchitem input:hover{
    color: white;
    font-weight: 600px;
    background-color: black;
    border: 5px solid white;
    letter-spacing: 1px;
 } 
-.items{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   gap: 30px;
+#logincon{
+  max-width: 220px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px; 
+  padding: 10px;
 }
 .class1{
   width: 100px;
@@ -89,7 +96,6 @@ body{
    box-shadow: 2px 2px 20px black;
   border-radius: 10px;
   flex-shrink: 1
-
 }
 .class2{
   width: 100px;
@@ -101,7 +107,6 @@ body{
   border-radius: 10px;
   flex-shrink: 1; 
 }
-
 .class1:hover{
     background: radial-gradient(circle,rgba(209, 8, 139, 1) 23%, rgba(148, 187, 233, 1) 100%);
     border: 3px solid white;
@@ -120,10 +125,10 @@ body{
  } 
 .imgbox{
    width: 100%;
-   height: 100px;
-   position: absolute;
-   top: 100px;
+   height: auto;
+   margin: 20px 0px;
    display: flex;
+   flex-wrap: wrap;
    font-size: small;
    background-color: white;
    gap: 10px;
@@ -148,7 +153,7 @@ body{
 .div1 {
    width: 40px;
    height: 40px;
-   background-image: url(/img/mobile.webp);
+   background-image: url(./img/mobile.webp);
    background-size: cover;
 }
 #image2{
@@ -158,7 +163,7 @@ body{
 .ite1{
   width: 40px;
    height: 40px;
-   background-image: url(/img/wireless-earbuds.webp);
+   background-image: url(./img/wireless-earbuds.webp);
    background-size: cover;
 }
 .image3{
@@ -169,7 +174,7 @@ body{
 .abc{
   width: 40px;
   height: 40px;
-  background-image: url(/img/smart-watches.webp);
+  background-image: url(./img/smart-watches.webp);
   background-size: cover;
 }
 .image4{
@@ -179,7 +184,7 @@ body{
 .acd{
   width: 40px;
   height: 40px;
-  background-image: url(/img/power-banks.webp);
+  background-image: url(./img/power-banks.webp);
   background-size: cover;
 }
 .image5{
@@ -189,7 +194,7 @@ body{
 .bca{
   width: 50px;
   height: 40px;
-  background-image: url(/img/bluetooth-speakers.webp);
+  background-image: url(./img/bluetooth-speakers.webp);
   background-size: cover;  
 }
 .image6{
@@ -199,7 +204,7 @@ body{
 .abbc{
   width: 40px;
   height: 40px;
-  background-image: url(/img/tablets.webp);
+  background-image: url(./img/tablets.webp);
   background-size: cover;  
  }
 .girl{
@@ -210,19 +215,24 @@ body{
   top: 200px;
 
 } 
+.beauty{
+  width: 100%;
+  height: auto;
+  background-color: aqua;
+
+}
 .bigimage{
    width: 100%;
-   height: 320px;
-   background-image: url(/img/big.jpg);
+   height: auto;
+   max-width: 400px;
+   background-image: url(./img/big.jpg);
    background-size: cover;
    flex-shrink: 1;
 
 }
 .pink{
   width: 100%;
-  height: 990px;
-  position: absolute;
-  top: 520px;
+  height: auto;
   padding-top: 40px;
   display: flex;
   flex-direction: column;
@@ -280,16 +290,21 @@ body{
    padding: 30px;
 }
 .cards{
-  background-color: white;
+  width: 100%;
+  height: auto;
+  max-width: 200px;
+  max-height: 200px;
+  background-color: wheat;
   padding: 10px;
+  color: black;
   border: 2px solid black;
   border-radius: 10px;
   flex-shrink: 1;
 }
-#card1{
-  display: flex;
-  flex-direction: column;
-  flex-shrink: 1;
+.cards:hover{
+  border: 4px solid black;
+  transform: rotate(360deg);
+  transition: 1s;
 }
 #card1 img{
    width: 120px;
@@ -331,27 +346,11 @@ body{
    width: 120px;
    padding-left: 50px;
 }
-#visab{
-  width: 100%;
-  height: 200;
-  background-color: black;
-  position: absolute;
-  top: 1400px;
-} 
-.visa{
-   width: 100%;
-   height: 280px;
-   background-image: url(/img/visa.jpg);
-   background-size: cover;
-   flex-shrink: 1;
-}
 .orange{
    width: 100%;
-   height: 700px;
+   height: auto;
    display: flex;
    flex-direction: column;
-   position: absolute; 
-   top: 1750px;
    background-color: darkorange;
 }
 .itempinks{
@@ -398,17 +397,33 @@ body{
 }
 .itempis{
    display: flex;
-   gap: 10px;
+   gap: 20px;
+   width: 100%;
+   height: auto;
    justify-content: space-evenly;
    flex-wrap: wrap;
    padding: 30px;
 }
 .cardss{
-  background-color: white;
+  background-color: wheat;
   padding: 10px;
+  width: 100%;  
+  height: auto;
+  max-height: 200px;
+  max-width: 200px;
+  color: black;
   border: 2px solid black;
   border-radius: 10px;
   flex-shrink: 1;
+}
+.cardss:hover{
+   border: 6px solid black;
+background: radial-gradient(circle,rgba(179, 63, 251, 0.12) 33%, rgba(252, 70, 107, 1) 100%);   
+      
+   transform: rotate(360deg);
+  transition: 1s;
+
+
 }
 #card1s{
   display: flex;
@@ -457,31 +472,38 @@ body{
 }
 .girlss{
   width: 100%;
-  height: 330;
+  height: auto;
   background-color: white ;
-  position: absolute;
-  top: 2520px;
 } 
-.bigimagess{
-   width: 100%;
-   height: 330px;
-   background-image: url(/img/order.jpg);
-   background-size: cover;
-   flex-shrink: 1;
+#visaa{
+  width: 100%;
+  height: 200;
+  background-color: black;
+  flex-shrink: 1;}
+  
+.images img{
+  width: 100%;
+  max-width: 900%;
+  height: auto;
 }
+.babar img{
+   width: 100%;
+   height: auto;
+}
+
 .footer{
   width: 100%;
-  height: 440px;
-  position: absolute;
-  top: 2900px;
+  height: auto;
   background-color: #1685c9;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-around;
 }
 .ites1{
   color: white; 
   flex-shrink: 1;
+  flex-wrap: wrap;
   margin: 50px; 
 }
 #pays{
@@ -490,24 +512,19 @@ body{
   flex-direction: column;
 
 }
-#pay1{
-  width: 390px;
-  height: 35px;
-  background-image: url(/img/payment_method.svg);
-  background-size: cover;
-  /* background-repeat: no-repeat; */
-  flex-shrink: 1;
 
-
+#payment{
+  width: 220px;
+  height: 100px;
 }
-#pay2{
-  width: 200px;
-  height: 60px;
-  flex-shrink: 1;
-  background-image: url(/img/google\ store.webp);
-  background-size: cover;
-  
+#lay{
+  width: 150px;
+  height: 50px;
+}
+.footercopy{
 
+  background-color: black;
+   padding: 20px;
 
 }
 
